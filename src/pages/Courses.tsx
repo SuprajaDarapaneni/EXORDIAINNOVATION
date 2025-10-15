@@ -1,0 +1,185 @@
+import { Code, Database, Brain, CheckCircle, Layout, Smartphone, ChevronRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
+
+export default function Courses() {
+  const courses = [
+    {
+      name: 'Python Programming',
+      duration: '2 Months',
+      level: 'Beginner to Advanced',
+      icon: <Code className="w-12 h-12" />,
+      slug: 'python',
+      price: '₹15,000',
+      topics: ['Python Basics', 'OOP Concepts', 'Data Structures', 'Django/Flask'],
+      description: 'Master Python from scratch and build real-world applications with hands-on projects.'
+    },
+    {
+      name: 'Java Full Stack',
+      duration: '3 Months',
+      level: 'Intermediate',
+      icon: <Code className="w-12 h-12" />,
+      slug: 'java',
+      price: '₹25,000',
+      topics: ['Core Java', 'Spring Boot', 'React JS', 'MySQL'],
+      description: 'Become a full-stack developer with expertise in Java backend and React frontend.'
+    },
+    {
+      name: 'Data Science',
+      duration: '4 Months',
+      level: 'Intermediate to Advanced',
+      icon: <Database className="w-12 h-12" />,
+      slug: 'data-science',
+      price: '₹30,000',
+      topics: ['Python', 'Statistics', 'Machine Learning', 'Data Visualization'],
+      description: 'Learn to analyze data and build predictive models using cutting-edge tools.'
+    },
+    {
+      name: 'Machine Learning',
+      duration: '3 Months',
+      level: 'Advanced',
+      icon: <Brain className="w-12 h-12" />,
+      slug: 'machine-learning',
+      price: '₹28,000',
+      topics: ['ML Algorithms', 'Deep Learning', 'TensorFlow', 'Neural Networks'],
+      description: 'Deep dive into machine learning algorithms and build intelligent applications.'
+    },
+    {
+      name: 'React JS Development',
+      duration: '2 Months',
+      level: 'Intermediate',
+      icon: <Layout className="w-12 h-12" />,
+      slug: 'react',
+      price: '₹18,000',
+      topics: ['React Fundamentals', 'Hooks', 'Redux', 'API Integration'],
+      description: 'Build modern, responsive web applications using React and its ecosystem.'
+    },
+    {
+      name: 'Software Testing',
+      duration: '2 Months',
+      level: 'Beginner',
+      icon: <CheckCircle className="w-12 h-12" />,
+      slug: 'testing',
+      price: '₹16,000',
+      topics: ['Manual Testing', 'Automation', 'Selenium', 'API Testing'],
+      description: 'Learn comprehensive testing strategies for web and mobile applications.'
+    },
+    {
+      name: 'MERN Stack Development',
+      duration: '4 Months',
+      level: 'Intermediate',
+      icon: <Code className="w-12 h-12" />,
+      slug: 'mern',
+      price: '₹32,000',
+      topics: ['MongoDB', 'Express', 'React', 'Node.js'],
+      description: 'Master the complete MERN stack and build scalable full-stack applications.'
+    },
+    {
+      name: 'Mobile App Development',
+      duration: '3 Months',
+      level: 'Intermediate',
+      icon: <Smartphone className="w-12 h-12" />,
+      slug: 'mobile',
+      price: '₹26,000',
+      topics: ['React Native', 'Flutter', 'Android', 'iOS'],
+      description: 'Create cross-platform mobile applications for Android and iOS.'
+    },
+    {
+      name: 'DevOps Engineering',
+      duration: '3 Months',
+      level: 'Advanced',
+      icon: <Database className="w-12 h-12" />,
+      slug: 'devops',
+      price: '₹29,000',
+      topics: ['Docker', 'Kubernetes', 'CI/CD', 'AWS/Azure'],
+      description: 'Learn DevOps practices and tools to streamline software development lifecycle.'
+    },
+  ];
+
+  return (
+    <main className="pt-20">
+      <section className="bg-gradient-to-br from-blue-50 to-cyan-50 py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
+              Our <span className="text-blue-600">Training Programs</span>
+            </h1>
+            <p className="text-xl text-gray-600">
+              Industry-relevant courses designed to make you job-ready with expert guidance and hands-on projects
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            {courses.map((course, index) => (
+              <div
+                key={index}
+                className="bg-white border-2 border-gray-100 rounded-xl p-6 hover:border-blue-600 hover:shadow-xl transition group"
+              >
+                <div className="text-blue-600 mb-4 group-hover:scale-110 transition">{course.icon}</div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">{course.name}</h3>
+                <p className="text-gray-600 mb-3">{course.description}</p>
+
+                <div className="space-y-2 mb-4">
+                  <div className="flex justify-between text-sm">
+                    <span className="text-gray-600">Duration:</span>
+                    <span className="font-semibold text-gray-900">{course.duration}</span>
+                  </div>
+                  <div className="flex justify-between text-sm">
+                    <span className="text-gray-600">Level:</span>
+                    <span className="font-semibold text-gray-900">{course.level}</span>
+                  </div>
+                  <div className="flex justify-between text-sm">
+                    <span className="text-gray-600">Fee:</span>
+                    <span className="font-semibold text-blue-600 text-lg">{course.price}</span>
+                  </div>
+                </div>
+
+                <div className="mb-4">
+                  <p className="text-sm font-semibold text-gray-700 mb-2">Key Topics:</p>
+                  <div className="flex flex-wrap gap-2">
+                    {course.topics.map((topic, idx) => (
+                      <span key={idx} className="text-xs bg-blue-50 text-blue-700 px-2 py-1 rounded">
+                        {topic}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                <Link
+                  to={`/courses/${course.slug}`}
+                  className="text-blue-600 font-semibold flex items-center gap-2 hover:gap-3 transition-all"
+                >
+                  View Details <ChevronRight className="w-4 h-4" />
+                </Link>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-gradient-to-br from-blue-50 to-cyan-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto bg-white rounded-2xl p-8 md:p-12 shadow-xl">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">
+              Not Sure Which Course to Choose?
+            </h2>
+            <p className="text-lg text-gray-600 mb-8 text-center">
+              Our career counselors are here to help you find the perfect course based on your goals and experience.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link to="/contact" className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition text-center font-semibold">
+                Get Free Counseling
+              </Link>
+              <Link to="/contact" className="bg-white text-blue-600 px-8 py-3 rounded-lg hover:bg-gray-50 transition border-2 border-blue-600 text-center font-semibold">
+                Download Syllabus
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  );
+}
