@@ -1,7 +1,7 @@
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../assets/ai jpg-01.png'; // ✅ Make sure filename has no spaces or rename it safely
+import logo from '../assets/ai jpg-01.png'; // ✅ Ensure the filename has no spaces
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -22,10 +22,25 @@ export default function Header() {
 
           {/* ✅ Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link to="/" className="text-gray-700 hover:text-blue-600 transition">Home</Link>
-            <Link to="/courses" className="text-gray-700 hover:text-blue-600 transition">Courses</Link>
-            <Link to="/about" className="text-gray-700 hover:text-blue-600 transition">About</Link>
-            <Link to="/contact" className="text-gray-700 hover:text-blue-600 transition">Contact</Link>
+            <Link to="/" className="text-gray-700 hover:text-blue-600 transition">
+              Home
+            </Link>
+            <Link to="/courses" className="text-gray-700 hover:text-blue-600 transition">
+              Courses
+            </Link>
+            
+            <Link to="/about" className="text-gray-700 hover:text-blue-600 transition">
+              About
+            </Link>
+            <Link to="/placements" className="text-gray-700 hover:text-blue-600 transition">
+              Placements
+            </Link>
+            <Link to="/services" className="text-gray-700 hover:text-blue-600 transition">
+              Services
+            </Link>
+            <Link to="/contact" className="text-gray-700 hover:text-blue-600 transition">
+              Contact
+            </Link>
             <Link
               to="/contact"
               className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition"
@@ -46,10 +61,48 @@ export default function Header() {
         {/* ✅ Mobile Menu */}
         {mobileMenuOpen && (
           <div className="md:hidden mt-4 pb-4 space-y-3">
-            <Link to="/" className="block text-gray-700 hover:text-blue-600 transition" onClick={() => setMobileMenuOpen(false)}>Home</Link>
-            <Link to="/courses" className="block text-gray-700 hover:text-blue-600 transition" onClick={() => setMobileMenuOpen(false)}>Courses</Link>
-            <Link to="/about" className="block text-gray-700 hover:text-blue-600 transition" onClick={() => setMobileMenuOpen(false)}>About</Link>
-            <Link to="/contact" className="block text-gray-700 hover:text-blue-600 transition" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
+            <Link
+              to="/"
+              className="block text-gray-700 hover:text-blue-600 transition"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Home
+            </Link>
+            <Link
+              to="/courses"
+              className="block text-gray-700 hover:text-blue-600 transition"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Courses
+            </Link>
+            <Link
+              to="/placements"
+              className="block text-gray-700 hover:text-blue-600 transition"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Placements
+            </Link>
+            <Link
+              to="/services"
+              className="block text-gray-700 hover:text-blue-600 transition"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Services
+            </Link>
+            <Link
+              to="/about"
+              className="block text-gray-700 hover:text-blue-600 transition"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              About
+            </Link>
+            <Link
+              to="/contact"
+              className="block text-gray-700 hover:text-blue-600 transition"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Contact
+            </Link>
             <Link
               to="/contact"
               className="block w-full bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition text-center"

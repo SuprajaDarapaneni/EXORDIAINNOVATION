@@ -9,10 +9,10 @@ export default function CourseDetail() {
       name: 'Python Programming',
       duration: '2 Months',
       level: 'Beginner to Advanced',
-      price: '₹15,000',
       rating: 4.8,
       students: 5420,
-      description: 'Master Python programming from the ground up. This comprehensive course covers everything from basic syntax to advanced concepts like OOP, data structures, and web development frameworks.',
+      description:
+        'Master Python programming from the ground up. This comprehensive course covers everything from basic syntax to advanced concepts like OOP, data structures, and web development frameworks.',
       highlights: [
         '100% Hands-on Training',
         'Live Project Experience',
@@ -24,23 +24,23 @@ export default function CourseDetail() {
       curriculum: [
         {
           module: 'Module 1: Python Fundamentals',
-          topics: ['Variables & Data Types', 'Control Flow', 'Functions', 'Modules & Packages']
+          topics: ['Variables & Data Types', 'Control Flow', 'Functions', 'Modules & Packages'],
         },
         {
           module: 'Module 2: Object-Oriented Programming',
-          topics: ['Classes & Objects', 'Inheritance', 'Polymorphism', 'Encapsulation']
+          topics: ['Classes & Objects', 'Inheritance', 'Polymorphism', 'Encapsulation'],
         },
         {
           module: 'Module 3: Data Structures',
-          topics: ['Lists & Tuples', 'Dictionaries & Sets', 'Algorithms', 'File Handling']
+          topics: ['Lists & Tuples', 'Dictionaries & Sets', 'Algorithms', 'File Handling'],
         },
         {
           module: 'Module 4: Web Development',
-          topics: ['Django Framework', 'Flask', 'REST APIs', 'Database Integration']
+          topics: ['Django Framework', 'Flask', 'REST APIs', 'Database Integration'],
         },
         {
           module: 'Module 5: Real-World Project',
-          topics: ['Project Planning', 'Implementation', 'Testing', 'Deployment']
+          topics: ['Project Planning', 'Implementation', 'Testing', 'Deployment'],
         },
       ],
       prerequisites: 'Basic computer knowledge. No prior programming experience required.',
@@ -50,10 +50,10 @@ export default function CourseDetail() {
       name: 'Data Science',
       duration: '4 Months',
       level: 'Intermediate to Advanced',
-      price: '₹30,000',
       rating: 4.9,
       students: 3850,
-      description: 'Become a certified Data Scientist. Learn to analyze complex data, build predictive models, and derive actionable insights using Python, Machine Learning, and advanced analytics tools.',
+      description:
+        'Become a certified Data Scientist. Learn to analyze complex data, build predictive models, and derive actionable insights using Python, Machine Learning, and advanced analytics tools.',
       highlights: [
         'Real Industry Projects',
         'Mentorship from Data Scientists',
@@ -65,27 +65,27 @@ export default function CourseDetail() {
       curriculum: [
         {
           module: 'Module 1: Python for Data Science',
-          topics: ['NumPy', 'Pandas', 'Data Manipulation', 'Data Cleaning']
+          topics: ['NumPy', 'Pandas', 'Data Manipulation', 'Data Cleaning'],
         },
         {
           module: 'Module 2: Statistics & Probability',
-          topics: ['Descriptive Statistics', 'Inferential Statistics', 'Hypothesis Testing', 'A/B Testing']
+          topics: ['Descriptive Statistics', 'Inferential Statistics', 'Hypothesis Testing', 'A/B Testing'],
         },
         {
           module: 'Module 3: Data Visualization',
-          topics: ['Matplotlib', 'Seaborn', 'Plotly', 'Dashboard Creation']
+          topics: ['Matplotlib', 'Seaborn', 'Plotly', 'Dashboard Creation'],
         },
         {
           module: 'Module 4: Machine Learning',
-          topics: ['Supervised Learning', 'Unsupervised Learning', 'Model Evaluation', 'Feature Engineering']
+          topics: ['Supervised Learning', 'Unsupervised Learning', 'Model Evaluation', 'Feature Engineering'],
         },
         {
           module: 'Module 5: Advanced Topics',
-          topics: ['Deep Learning Basics', 'NLP', 'Time Series', 'Big Data Tools']
+          topics: ['Deep Learning Basics', 'NLP', 'Time Series', 'Big Data Tools'],
         },
         {
           module: 'Module 6: Capstone Project',
-          topics: ['Problem Definition', 'Data Collection', 'Model Building', 'Presentation']
+          topics: ['Problem Definition', 'Data Collection', 'Model Building', 'Presentation'],
         },
       ],
       prerequisites: 'Basic Python knowledge and mathematics (statistics basics recommended).',
@@ -95,10 +95,10 @@ export default function CourseDetail() {
       name: 'Java Full Stack Development',
       duration: '3 Months',
       level: 'Intermediate',
-      price: '₹25,000',
       rating: 4.7,
       students: 4120,
-      description: 'Master full-stack development with Java and modern web technologies. Build end-to-end applications using Spring Boot, React, and industry-standard tools.',
+      description:
+        'Master full-stack development with Java and modern web technologies. Build end-to-end applications using Spring Boot, React, and industry-standard tools.',
       highlights: [
         'Complete Full Stack Training',
         'Spring Boot & Microservices',
@@ -110,23 +110,23 @@ export default function CourseDetail() {
       curriculum: [
         {
           module: 'Module 1: Core Java',
-          topics: ['Java Basics', 'OOP Concepts', 'Collections', 'Exception Handling']
+          topics: ['Java Basics', 'OOP Concepts', 'Collections', 'Exception Handling'],
         },
         {
           module: 'Module 2: Advanced Java',
-          topics: ['JDBC', 'Servlets', 'JSP', 'Hibernate']
+          topics: ['JDBC', 'Servlets', 'JSP', 'Hibernate'],
         },
         {
           module: 'Module 3: Spring Framework',
-          topics: ['Spring Core', 'Spring Boot', 'Spring MVC', 'REST APIs']
+          topics: ['Spring Core', 'Spring Boot', 'Spring MVC', 'REST APIs'],
         },
         {
           module: 'Module 4: Frontend Development',
-          topics: ['HTML/CSS/JavaScript', 'React JS', 'Redux', 'API Integration']
+          topics: ['HTML/CSS/JavaScript', 'React JS', 'Redux', 'API Integration'],
         },
         {
           module: 'Module 5: Database & Deployment',
-          topics: ['MySQL', 'MongoDB', 'Git/GitHub', 'AWS/Cloud']
+          topics: ['MySQL', 'MongoDB', 'Git/GitHub', 'AWS/Cloud'],
         },
       ],
       prerequisites: 'Basic programming knowledge. Understanding of Java basics is helpful.',
@@ -145,7 +145,10 @@ export default function CourseDetail() {
         <div className="text-center">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Course Not Found</h1>
           <p className="text-gray-600 mb-8">The course you're looking for doesn't exist.</p>
-          <Link to="/courses" className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
+          <Link
+            to="/courses"
+            className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition"
+          >
             View All Courses
           </Link>
         </div>
@@ -166,12 +169,8 @@ export default function CourseDetail() {
 
             <div className="grid md:grid-cols-3 gap-8">
               <div className="md:col-span-2">
-                <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-                  {course.name}
-                </h1>
-                <p className="text-xl text-gray-700 mb-6">
-                  {course.description}
-                </p>
+                <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">{course.name}</h1>
+                <p className="text-xl text-gray-700 mb-6">{course.description}</p>
 
                 <div className="flex flex-wrap gap-6 text-sm text-gray-600">
                   <div className="flex items-center gap-2">
@@ -190,15 +189,16 @@ export default function CourseDetail() {
               </div>
 
               <div className="bg-white rounded-xl p-6 shadow-xl h-fit">
-                <div className="text-center mb-6">
-                  <div className="text-4xl font-bold text-blue-600 mb-2">{course.price}</div>
-                  <div className="text-sm text-gray-600">Complete Course Fee</div>
-                </div>
-
-                <Link to="/contact" className="block w-full bg-blue-600 text-white text-center px-6 py-3 rounded-lg hover:bg-blue-700 transition font-semibold mb-3">
+                <Link
+                  to="/contact"
+                  className="block w-full bg-blue-600 text-white text-center px-6 py-3 rounded-lg hover:bg-blue-700 transition font-semibold mb-3"
+                >
                   Enroll Now
                 </Link>
-                <Link to="/contact" className="block w-full bg-white text-blue-600 text-center px-6 py-3 rounded-lg hover:bg-gray-50 transition border-2 border-blue-600 font-semibold">
+                <Link
+                  to="/contact"
+                  className="block w-full bg-white text-blue-600 text-center px-6 py-3 rounded-lg hover:bg-gray-50 transition border-2 border-blue-600 font-semibold"
+                >
                   Download Syllabus
                 </Link>
               </div>
@@ -227,7 +227,10 @@ export default function CourseDetail() {
                 <h2 className="text-3xl font-bold text-gray-900 mb-6">Course Curriculum</h2>
                 <div className="space-y-4">
                   {course.curriculum?.map((item: any, index: number) => (
-                    <div key={index} className="border-2 border-gray-100 rounded-lg p-6 hover:border-blue-600 transition">
+                    <div
+                      key={index}
+                      className="border-2 border-gray-100 rounded-lg p-6 hover:border-blue-600 transition"
+                    >
                       <div className="flex items-start gap-3 mb-3">
                         <BookOpen className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
                         <h3 className="text-xl font-bold text-gray-900">{item.module}</h3>
@@ -247,16 +250,17 @@ export default function CourseDetail() {
 
               <div>
                 <h2 className="text-3xl font-bold text-gray-900 mb-4">Prerequisites</h2>
-                <p className="text-gray-700 bg-blue-50 p-4 rounded-lg">
-                  {course.prerequisites}
-                </p>
+                <p className="text-gray-700 bg-blue-50 p-4 rounded-lg">{course.prerequisites}</p>
               </div>
 
               <div>
                 <h2 className="text-3xl font-bold text-gray-900 mb-4">Career Opportunities</h2>
                 <div className="flex flex-wrap gap-3">
                   {course.careerOptions?.map((career: string, index: number) => (
-                    <span key={index} className="bg-green-50 text-green-700 px-4 py-2 rounded-lg font-medium">
+                    <span
+                      key={index}
+                      className="bg-green-50 text-green-700 px-4 py-2 rounded-lg font-medium"
+                    >
                       {career}
                     </span>
                   ))}
@@ -296,7 +300,10 @@ export default function CourseDetail() {
                 <p className="text-gray-300 text-sm mb-4">
                   Talk to our counselors to find the best course for your career goals.
                 </p>
-                <Link to="/contact" className="block w-full bg-blue-600 text-center px-4 py-2 rounded-lg hover:bg-blue-700 transition">
+                <Link
+                  to="/contact"
+                  className="block w-full bg-blue-600 text-center px-4 py-2 rounded-lg hover:bg-blue-700 transition"
+                >
                   Contact Us
                 </Link>
               </div>
