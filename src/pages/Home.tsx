@@ -3,19 +3,19 @@ import { Link } from 'react-router-dom';
 
 export default function Home() {
   const stats = [
-    { icon: <Users className="w-10 h-10" />, value: '30,000+', label: 'Trained Students' },
+    { icon: <Users className="w-10 h-10" />, value: '10,000+', label: 'Trained Students' },
     { icon: <Briefcase className="w-10 h-10" />, value: '1250+', label: 'Hiring Companies' },
     { icon: <Star className="w-10 h-10" />, value: '4.8/5', label: 'Student Rating' },
     { icon: <Award className="w-10 h-10" />, value: '100+', label: 'Expert Trainers' },
   ];
 
   const courses = [
-    { name: 'Python Programming', duration: '2 Months', icon: <Code className="w-8 h-8" />, slug: 'python' },
-    { name: 'Java Full Stack', duration: '3 Months', icon: <Code className="w-8 h-8" />, slug: 'java' },
-    { name: 'Data Science', duration: '4 Months', icon: <Database className="w-8 h-8" />, slug: 'data-science' },
-    { name: 'Machine Learning', duration: '3 Months', icon: <Brain className="w-8 h-8" />, slug: 'machine-learning' },
-    { name: 'React JS Development', duration: '2 Months', icon: <Code className="w-8 h-8" />, slug: 'react' },
-    { name: 'Software Testing', duration: '2 Months', icon: <CheckCircle className="w-8 h-8" />, slug: 'testing' },
+    { name: 'Python Programming', icon: <Code className="w-8 h-8" />, slug: 'python' },
+    { name: 'Java Full Stack', icon: <Code className="w-8 h-8" />, slug: 'java' },
+    { name: 'Data Science', icon: <Database className="w-8 h-8" />, slug: 'data-science' },
+    { name: 'Machine Learning', icon: <Brain className="w-8 h-8" />, slug: 'machine-learning' },
+    { name: 'React JS Development', icon: <Code className="w-8 h-8" />, slug: 'react' },
+    { name: 'Software Testing', icon: <CheckCircle className="w-8 h-8" />, slug: 'testing' },
   ];
 
   const testimonials = [
@@ -101,7 +101,6 @@ export default function Home() {
               >
                 <div className="text-blue-600 mb-4 group-hover:scale-110 transition">{course.icon}</div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">{course.name}</h3>
-                <p className="text-gray-600 mb-4">Duration: {course.duration}</p>
                 <Link
                   to={`/courses/${course.slug}`}
                   className="text-blue-600 font-semibold flex items-center gap-2 hover:gap-3 transition-all"
@@ -147,6 +146,53 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* Career Support / Placement Section */}
+<section className="py-20 bg-gradient-to-br from-blue-600 to-cyan-600 text-white">
+  <div className="container mx-auto px-4 text-center">
+    <h2 className="text-4xl md:text-5xl font-bold mb-6">
+      We Help <span className="text-yellow-300">IT & Non-IT Students</span> Get Placed
+    </h2>
+    <p className="text-lg md:text-xl text-blue-100 max-w-3xl mx-auto mb-12">
+      Whether you’re a fresher, career switcher, or have a career gap — 
+      our hands-on training, real-time projects, and dedicated placement support 
+      ensure you land your dream job in tech.
+    </p>
+
+    <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div className="bg-white/10 backdrop-blur-md p-8 rounded-2xl shadow-lg hover:bg-white/20 transition">
+        <h3 className="text-2xl font-bold mb-3 text-yellow-300">Career Gap? No Worries!</h3>
+        <p className="text-blue-50">
+          We specialize in upskilling students with long career gaps and help them
+          confidently restart their professional journey.
+        </p>
+      </div>
+      <div className="bg-white/10 backdrop-blur-md p-8 rounded-2xl shadow-lg hover:bg-white/20 transition">
+        <h3 className="text-2xl font-bold mb-3 text-yellow-300">Non-IT Background?</h3>
+        <p className="text-blue-50">
+          Many of our top performers come from non-technical backgrounds. 
+          We start from the basics and build your coding confidence step-by-step.
+        </p>
+      </div>
+      <div className="bg-white/10 backdrop-blur-md p-8 rounded-2xl shadow-lg hover:bg-white/20 transition">
+        <h3 className="text-2xl font-bold mb-3 text-yellow-300">100% Placement Assistance</h3>
+        <p className="text-blue-50">
+          Get access to mock interviews, resume building, and exclusive 
+          placement drives with our 1200+ hiring partners.
+        </p>
+      </div>
+    </div>
+
+    <div className="mt-12">
+      <Link
+        to="/placements"
+        className="inline-block bg-white text-blue-700 font-semibold px-8 py-4 rounded-lg hover:bg-yellow-300 hover:text-blue-900 transition text-lg"
+      >
+        Explore Placement Stories
+      </Link>
+    </div>
+  </div>
+</section>
+
 
       {/* Testimonials Section */}
       <section className="py-20 bg-gradient-to-br from-blue-50 to-cyan-50">
@@ -155,9 +201,7 @@ export default function Home() {
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
               What Our <span className="text-blue-600">Students Say</span>
             </h2>
-            <p className="text-xl text-gray-600">
-              Success stories from our alumni
-            </p>
+            <p className="text-xl text-gray-600">Success stories from our alumni</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
