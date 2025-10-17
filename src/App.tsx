@@ -6,8 +6,8 @@ import Courses from './pages/Courses';
 import CourseDetail from './pages/CourseDetail';
 import About from './pages/About';
 import Contact from './pages/Contact';
-import Placements from './pages/Placements'; // ✅ Added
-import Services from './pages/Services';     // ✅ Added
+import Placements from './pages/placements'; // ✅ Added
+import Services from './pages/services';     // ✅ Added
 
 function App() {
   return (
