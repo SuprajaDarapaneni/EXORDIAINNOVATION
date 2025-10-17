@@ -22,37 +22,32 @@ export default function Contact() {
 
   const locations = [
     {
-      city: 'Bangalore',
-      address: 'MG Road, Bangalore - 560001',
-      phone: '+91 98765 43210',
-      email: 'bangalore@techlearn.com',
+      city: 'Vijayawada',
+      address: 'Near Benz circle bharathi nagar  520008',
+      phone: '+91 9493252078',
+      email: 'info@astechnosolutions.com',
     },
     {
-      city: 'Hyderabad',
-      address: 'Hi-Tech City, Hyderabad - 500081',
-      phone: '+91 98765 43211',
-      email: 'hyderabad@techlearn.com',
+      city: 'Narasaraopet',
+      address: '321-220 Ramireddypet Narasaraopet -522601',
+      phone: '+91  9493252078',
+      email: 'info@astechnosolutions.com',
     },
-    {
-      city: 'Mumbai',
-      address: 'Andheri West, Mumbai - 400053',
-      phone: '+91 98765 43212',
-      email: 'mumbai@techlearn.com',
-    },
+     
   ];
 
   const contactInfo = [
     {
       icon: <Phone className="w-6 h-6" />,
       title: 'Phone',
-      content: '+91 98765 43210',
-      link: 'tel:+919876543210',
+      content: '+91 9493252078',
+      link: 'tel:+919493252078',
     },
     {
       icon: <Mail className="w-6 h-6" />,
       title: 'Email',
-      content: 'info@techlearn.com',
-      link: 'mailto:info@techlearn.com',
+      content: ' info@astechnosolutions.com',
+      link: 'mailto: info@astechnosolutions.com',
     },
     {
       icon: <Clock className="w-6 h-6" />,
@@ -243,10 +238,10 @@ export default function Contact() {
               Join thousands of successful students who started their tech journey with us
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="tel:+919876543210" className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition font-semibold">
+              <a href="tel:+919493252078" className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition font-semibold">
                 Call Now
               </a>
-              <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" className="bg-green-600 text-white px-8 py-3 rounded-lg hover:bg-green-700 transition font-semibold">
+              <a href="https://wa.me/+919493252078" target="_blank" rel="noopener noreferrer" className="bg-green-600 text-white px-8 py-3 rounded-lg hover:bg-green-700 transition font-semibold">
                 WhatsApp Us
               </a>
             </div>

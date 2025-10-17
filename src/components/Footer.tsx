@@ -40,7 +40,7 @@ export default function Footer() {
             <h3 className="text-white font-bold mb-4">Contact Info</h3>
             <ul className="space-y-2 text-sm">
               <li>Email: info@techlearn.com</li>
-              <li>Phone: +91 98765 43210</li>
+              <li>Phone: +91 9493252078s</li>
               <li>Location: Bangalore, India</li>
             </ul>
           </div>

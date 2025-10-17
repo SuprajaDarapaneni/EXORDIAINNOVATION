@@ -42,7 +42,8 @@ export default function Home() {
   const companyLogos = ['Google', 'Microsoft', 'Amazon', 'TCS', 'Infosys', 'Wipro', 'Accenture', 'Cognizant'];
 
   return (
-    <main>
+    <main className="pt-20">
+      {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-50 to-cyan-50 py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
@@ -53,10 +54,16 @@ export default function Home() {
               Transform your career with expert-led training programs. Get job-ready skills from industry professionals.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/courses" className="bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition flex items-center justify-center gap-2 text-lg font-semibold">
+              <Link
+                to="/courses"
+                className="bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition flex items-center justify-center gap-2 text-lg font-semibold"
+              >
                 Explore Courses <ChevronRight className="w-5 h-5" />
               </Link>
-              <Link to="/contact" className="bg-white text-blue-600 px-8 py-4 rounded-lg hover:bg-gray-50 transition border-2 border-blue-600 text-lg font-semibold">
+              <Link
+                to="/contact"
+                className="bg-white text-blue-600 px-8 py-4 rounded-lg hover:bg-gray-50 transition border-2 border-blue-600 text-lg font-semibold"
+              >
                 Book Free Demo
               </Link>
             </div>
@@ -74,6 +81,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Courses Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
@@ -94,7 +102,10 @@ export default function Home() {
                 <div className="text-blue-600 mb-4 group-hover:scale-110 transition">{course.icon}</div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">{course.name}</h3>
                 <p className="text-gray-600 mb-4">Duration: {course.duration}</p>
-                <Link to={`/courses/${course.slug}`} className="text-blue-600 font-semibold flex items-center gap-2 hover:gap-3 transition-all">
+                <Link
+                  to={`/courses/${course.slug}`}
+                  className="text-blue-600 font-semibold flex items-center gap-2 hover:gap-3 transition-all"
+                >
                   View Details <ChevronRight className="w-4 h-4" />
                 </Link>
               </div>
@@ -102,13 +113,17 @@ export default function Home() {
           </div>
 
           <div className="text-center mt-12">
-            <Link to="/courses" className="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition text-lg font-semibold">
+            <Link
+              to="/courses"
+              className="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition text-lg font-semibold"
+            >
               View All Courses
             </Link>
           </div>
         </div>
       </section>
 
+      {/* Hiring Partners Section */}
       <section className="py-20 bg-white border-t">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
@@ -133,6 +148,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Testimonials Section */}
       <section className="py-20 bg-gradient-to-br from-blue-50 to-cyan-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
@@ -163,6 +179,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Call to Action Section */}
       <section className="py-20 bg-gray-900 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
@@ -172,7 +189,10 @@ export default function Home() {
             <p className="text-xl text-gray-300 mb-8">
               Join thousands of students who have transformed their careers with us
             </p>
-            <Link to="/contact" className="inline-block bg-blue-600 text-white px-10 py-4 rounded-lg hover:bg-blue-700 transition text-lg font-semibold">
+            <Link
+              to="/contact"
+              className="inline-block bg-blue-600 text-white px-10 py-4 rounded-lg hover:bg-blue-700 transition text-lg font-semibold"
+            >
               Get Started Today
             </Link>
           </div>

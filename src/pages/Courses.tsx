@@ -5,91 +5,64 @@ export default function Courses() {
   const courses = [
     {
       name: 'Python Programming',
-      duration: '2 Months',
-      level: 'Beginner to Advanced',
       icon: <Code className="w-12 h-12" />,
       slug: 'python',
-      price: '₹15,000',
       topics: ['Python Basics', 'OOP Concepts', 'Data Structures', 'Django/Flask'],
       description: 'Master Python from scratch and build real-world applications with hands-on projects.'
     },
     {
       name: 'Java Full Stack',
-      duration: '3 Months',
-      level: 'Intermediate',
       icon: <Code className="w-12 h-12" />,
       slug: 'java',
-      price: '₹25,000',
       topics: ['Core Java', 'Spring Boot', 'React JS', 'MySQL'],
       description: 'Become a full-stack developer with expertise in Java backend and React frontend.'
     },
     {
       name: 'Data Science',
-      duration: '4 Months',
-      level: 'Intermediate to Advanced',
       icon: <Database className="w-12 h-12" />,
       slug: 'data-science',
-      price: '₹30,000',
       topics: ['Python', 'Statistics', 'Machine Learning', 'Data Visualization'],
       description: 'Learn to analyze data and build predictive models using cutting-edge tools.'
     },
     {
       name: 'Machine Learning',
-      duration: '3 Months',
-      level: 'Advanced',
       icon: <Brain className="w-12 h-12" />,
       slug: 'machine-learning',
-      price: '₹28,000',
       topics: ['ML Algorithms', 'Deep Learning', 'TensorFlow', 'Neural Networks'],
       description: 'Deep dive into machine learning algorithms and build intelligent applications.'
     },
     {
       name: 'React JS Development',
-      duration: '2 Months',
-      level: 'Intermediate',
       icon: <Layout className="w-12 h-12" />,
       slug: 'react',
-      price: '₹18,000',
       topics: ['React Fundamentals', 'Hooks', 'Redux', 'API Integration'],
       description: 'Build modern, responsive web applications using React and its ecosystem.'
     },
     {
       name: 'Software Testing',
-      duration: '2 Months',
-      level: 'Beginner',
       icon: <CheckCircle className="w-12 h-12" />,
       slug: 'testing',
-      price: '₹16,000',
       topics: ['Manual Testing', 'Automation', 'Selenium', 'API Testing'],
       description: 'Learn comprehensive testing strategies for web and mobile applications.'
     },
     {
       name: 'MERN Stack Development',
-      duration: '4 Months',
-      level: 'Intermediate',
       icon: <Code className="w-12 h-12" />,
       slug: 'mern',
-      price: '₹32,000',
       topics: ['MongoDB', 'Express', 'React', 'Node.js'],
       description: 'Master the complete MERN stack and build scalable full-stack applications.'
     },
     {
       name: 'Mobile App Development',
-      duration: '3 Months',
-      level: 'Intermediate',
       icon: <Smartphone className="w-12 h-12" />,
       slug: 'mobile',
-      price: '₹26,000',
       topics: ['React Native', 'Flutter', 'Android', 'iOS'],
       description: 'Create cross-platform mobile applications for Android and iOS.'
     },
     {
       name: 'DevOps Engineering',
-      duration: '3 Months',
-      level: 'Advanced',
       icon: <Database className="w-12 h-12" />,
       slug: 'devops',
-      price: '₹29,000',
       topics: ['Docker', 'Kubernetes', 'CI/CD', 'AWS/Azure'],
       description: 'Learn DevOps practices and tools to streamline software development lifecycle.'
     },
@@ -120,22 +93,7 @@ export default function Courses() {
               >
                 <div className="text-blue-600 mb-4 group-hover:scale-110 transition">{course.icon}</div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">{course.name}</h3>
-                <p className="text-gray-600 mb-3">{course.description}</p>
-
-                <div className="space-y-2 mb-4">
-                  <div className="flex justify-between text-sm">
-                    <span className="text-gray-600">Duration:</span>
-                    <span className="font-semibold text-gray-900">{course.duration}</span>
-                  </div>
-                  <div className="flex justify-between text-sm">
-                    <span className="text-gray-600">Level:</span>
-                    <span className="font-semibold text-gray-900">{course.level}</span>
-                  </div>
-                  <div className="flex justify-between text-sm">
-                    <span className="text-gray-600">Fee:</span>
-                    <span className="font-semibold text-blue-600 text-lg">{course.price}</span>
-                  </div>
-                </div>
+                <p className="text-gray-600 mb-4">{course.description}</p>
 
                 <div className="mb-4">
                   <p className="text-sm font-semibold text-gray-700 mb-2">Key Topics:</p>
