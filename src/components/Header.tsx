@@ -12,12 +12,13 @@ export default function Header() {
         <div className="flex items-center justify-between">
           {/* ✅ Logo Section */}
           <Link to="/" className="flex items-center space-x-2">
-            <img
-              src={logo}
-              alt="AI Technologies Logo"
-              className="h-14 w-100 brightness-125 contrast-125 hover:scale-105 transition-transform duration-300"
-              loading="lazy"
-            />
+           <img
+  src={logo}
+  alt="AI Technologies Logo"
+  className="h-14 w-auto scale-150 object-contain brightness-125 contrast-125 hover:scale-150 transition-transform duration-300"
+  loading="lazy"
+/>
+
           </Link>
 
           {/* ✅ Desktop Menu */}
