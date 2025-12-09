@@ -1,7 +1,7 @@
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../assets/ai jpg-01.png'; // ✅ Ensure the filename has no spaces
+import logo from '../assets/exordia_upscaled.png'; // ✅ Ensure the filename has no spaces
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -15,7 +15,7 @@ export default function Header() {
             <img
               src={logo}
               alt="AI Technologies Logo"
-              className="h-14 w-auto object-contain brightness-125 contrast-125 hover:scale-105 transition-transform duration-300"
+              className="h-14 w-100 brightness-125 contrast-125 hover:scale-105 transition-transform duration-300"
               loading="lazy"
             />
           </Link>

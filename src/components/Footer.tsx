@@ -1,6 +1,6 @@
 import { BookOpen } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import logo from '../assets/ai jpg-01.png'; // your logo path
+import logo from '../assets/exordia_upscaled.png'; // your logo path
 
 export default function Footer() {
   return (
