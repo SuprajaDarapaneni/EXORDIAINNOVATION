@@ -6,49 +6,41 @@ export default function Placements() {
       name: "Sai Teja Reddy",
       role: "Software Engineer",
       company: "Infosys",
-      avatar: "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=600",
     },
     {
       name: "Keerthi Lakshmi",
       role: "Frontend Developer",
       company: "TCS",
-      avatar: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=600",
     },
     {
       name: "Vamsi Krishna",
       role: "Data Analyst",
       company: "Wipro",
-      avatar: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=600",
     },
     {
       name: "Harika Devi",
       role: "UI/UX Designer",
       company: "Tech Mahindra",
-      avatar: "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=600",
     },
     {
       name: "Manoj Kumar",
       role: "AI Engineer",
       company: "HCL",
-      avatar: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=600",
     },
     {
       name: "Sravani Reddy",
       role: "Backend Developer",
       company: "Cognizant",
-      avatar: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=600",
     },
     {
       name: "Rakesh Babu",
       role: "DevOps Engineer",
       company: "Accenture",
-      avatar: "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=600",
     },
     {
       name: "Divya Sri",
       role: "Data Scientist",
       company: "IBM",
-      avatar: "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=600",
     },
   ];
 
@@ -100,11 +92,9 @@ export default function Placements() {
               key={index}
               className="bg-white rounded-2xl p-6 shadow-md border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
             >
-              <img
-                src={student.avatar}
-                alt={student.name}
-                className="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-4 border-blue-100"
-              />
+              <div className="w-14 h-14 rounded-full mx-auto mb-4 flex items-center justify-center bg-blue-50 text-blue-700 font-bold text-xl">
+                {student.name.charAt(0)}
+              </div>
               <h3 className="text-lg font-semibold text-gray-800">
                 {student.name}
               </h3>
@@ -135,7 +125,7 @@ export default function Placements() {
 
         {/* --- Footer Text --- */}
         <div className="mt-16 flex justify-center items-center gap-2 text-blue-600 font-semibold text-lg">
-          <Award /> Over 1000+  Students Placed in Leading Companies!
+          <Award /> Over 1000+ Students Placed in Leading Companies!
         </div>
       </div>
 

@@ -3,70 +3,57 @@ import { Link } from 'react-router-dom';
 
 export default function Courses() {
   const courses = [
-    {
-      name: 'Python Programming',
-      icon: <Code className="w-12 h-12" />,
-      slug: 'python',
-      topics: ['Python Basics', 'OOP Concepts', 'Data Structures', 'Django/Flask'],
-      description: 'Master Python from scratch and build real-world applications with hands-on projects.'
-    },
-    {
-      name: 'Java Full Stack',
-      icon: <Code className="w-12 h-12" />,
-      slug: 'java',
-      topics: ['Core Java', 'Spring Boot', 'React JS', 'MySQL'],
-      description: 'Become a full-stack developer with expertise in Java backend and React frontend.'
-    },
-    {
-      name: 'Data Science',
-      icon: <Database className="w-12 h-12" />,
-      slug: 'data-science',
-      topics: ['Python', 'Statistics', 'Machine Learning', 'Data Visualization'],
-      description: 'Learn to analyze data and build predictive models using cutting-edge tools.'
-    },
-    {
-      name: 'Machine Learning',
-      icon: <Brain className="w-12 h-12" />,
-      slug: 'machine-learning',
-      topics: ['ML Algorithms', 'Deep Learning', 'TensorFlow', 'Neural Networks'],
-      description: 'Deep dive into machine learning algorithms and build intelligent applications.'
-    },
-    {
-      name: 'React JS Development',
-      icon: <Layout className="w-12 h-12" />,
-      slug: 'react',
-      topics: ['React Fundamentals', 'Hooks', 'Redux', 'API Integration'],
-      description: 'Build modern, responsive web applications using React and its ecosystem.'
-    },
-    {
-      name: 'Software Testing',
-      icon: <CheckCircle className="w-12 h-12" />,
-      slug: 'testing',
-      topics: ['Manual Testing', 'Automation', 'Selenium', 'API Testing'],
-      description: 'Learn comprehensive testing strategies for web and mobile applications.'
-    },
-    {
-      name: 'MERN Stack Development',
-      icon: <Code className="w-12 h-12" />,
-      slug: 'mern',
-      topics: ['MongoDB', 'Express', 'React', 'Node.js'],
-      description: 'Master the complete MERN stack and build scalable full-stack applications.'
-    },
-    {
-      name: 'Mobile App Development',
-      icon: <Smartphone className="w-12 h-12" />,
-      slug: 'mobile',
-      topics: ['React Native', 'Flutter', 'Android', 'iOS'],
-      description: 'Create cross-platform mobile applications for Android and iOS.'
-    },
-    {
-      name: 'DevOps Engineering',
-      icon: <Database className="w-12 h-12" />,
-      slug: 'devops',
-      topics: ['Docker', 'Kubernetes', 'CI/CD', 'AWS/Azure'],
-      description: 'Learn DevOps practices and tools to streamline software development lifecycle.'
-    },
-  ];
+  {
+    name: 'Python Full Stack',
+    icon: <Code className="w-12 h-12" />,
+    slug: 'python-fullstack',
+    topics: ['Python Basics', 'OOP', 'Django/Flask', 'React/Frontend', 'MySQL'],
+    description: 'Become a full-stack Python developer with both backend and frontend skills.'
+  },
+  {
+    name: 'Java Full Stack',
+    icon: <Code className="w-12 h-12" />,
+    slug: 'java',
+    topics: ['Core Java', 'Spring Boot', 'React JS', 'MySQL'],
+    description: 'Become a full-stack developer with expertise in Java backend and React frontend.'
+  },
+  {
+    name: 'Data Science',
+    icon: <Database className="w-12 h-12" />,
+    slug: 'data-science',
+    topics: ['Python', 'Statistics', 'Machine Learning', 'Data Visualization'],
+    description: 'Learn to analyze data and build predictive models using cutting-edge tools.'
+  },
+  {
+    name: 'Software Testing',
+    icon: <CheckCircle className="w-12 h-12" />,
+    slug: 'testing',
+    topics: ['Manual Testing', 'Automation', 'Selenium', 'API Testing'],
+    description: 'Learn comprehensive testing strategies for web and mobile applications.'
+  },
+  {
+    name: 'MERN Stack Development',
+    icon: <Code className="w-12 h-12" />,
+    slug: 'mern',
+    topics: ['MongoDB', 'Express', 'React', 'Node.js'],
+    description: 'Master the complete MERN stack and build scalable full-stack applications.'
+  },
+  {
+    name: 'Mobile App Development',
+    icon: <Smartphone className="w-12 h-12" />,
+    slug: 'mobile',
+    topics: ['React Native', 'Flutter', 'Android', 'iOS'],
+    description: 'Create cross-platform mobile applications for Android and iOS.'
+  },
+  {
+    name: 'DevOps Engineering',
+    icon: <Database className="w-12 h-12" />,
+    slug: 'devops',
+    topics: ['Docker', 'Kubernetes', 'CI/CD', 'AWS/Azure'],
+    description: 'Learn DevOps practices and tools to streamline software development lifecycle.'
+  },
+];
+
 
   return (
     <main className="pt-20">

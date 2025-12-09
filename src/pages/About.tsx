@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 
 export default function About() {
   const stats = [
-    { icon: <Users className="w-10 h-10" />, value: '10,000+', label: 'Students Trained' },
-    { icon: <Award className="w-10 h-10" />, value: '100+', label: 'Expert Trainers' },
+    { icon: <Users className="w-10 h-10" />, value: '500+', label: 'Students Trained' },
+    { icon: <Award className="w-10 h-10" />, value: '50+', label: 'Expert Trainers' },
     { icon: <TrendingUp className="w-10 h-10" />, value: '95%', label: 'Placement Rate' },
-    { icon: <Target className="w-10 h-10" />, value: '1250+', label: 'Hiring Partners' },
+    { icon: <Target className="w-10 h-10" />, value: '50+', label: 'Hiring Partners' },
   ];
 
   const values = [
@@ -38,8 +38,8 @@ export default function About() {
 
   const achievements = [
     'Awarded Best IT & EdTech Company 2024',
-    'Partnership with 1250+ Hiring Companies',
-    'Trained 10,000+ Students Successfully',
+    'Partnership with 50+ Hiring Companies',
+    'Trained 500+ Students Successfully',
     '95% Placement Success Rate',
     'Serving Clients Across 15+ Cities in India',
     'Rated 4.8/5 by Students & Clients',

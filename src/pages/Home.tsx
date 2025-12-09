@@ -3,18 +3,17 @@ import { Link } from 'react-router-dom';
 
 export default function Home() {
   const stats = [
-    { icon: <Users className="w-10 h-10" />, value: '10,000+', label: 'Trained Students' },
-    { icon: <Briefcase className="w-10 h-10" />, value: '1250+', label: 'Hiring Companies' },
+    { icon: <Users className="w-10 h-10" />, value: '500+', label: 'Trained Students' },
+    { icon: <Briefcase className="w-10 h-10" />, value: '50+', label: 'Hiring Companies' },
     { icon: <Star className="w-10 h-10" />, value: '4.8/5', label: 'Student Rating' },
-    { icon: <Award className="w-10 h-10" />, value: '100+', label: 'Expert Trainers' },
+    { icon: <Award className="w-10 h-10" />, value: '50+', label: 'Expert Trainers' },
   ];
 
   const courses = [
-    { name: 'Python Programming', icon: <Code className="w-8 h-8" />, slug: 'python' },
+    { name: 'Python full stack', icon: <Code className="w-8 h-8" />, slug: ' python-fullstack' },
     { name: 'Java Full Stack', icon: <Code className="w-8 h-8" />, slug: 'java' },
     { name: 'Data Science', icon: <Database className="w-8 h-8" />, slug: 'data-science' },
-    { name: 'Machine Learning', icon: <Brain className="w-8 h-8" />, slug: 'machine-learning' },
-    { name: 'React JS Development', icon: <Code className="w-8 h-8" />, slug: 'react' },
+     
     { name: 'Software Testing', icon: <CheckCircle className="w-8 h-8" />, slug: 'testing' },
   ];
 
