@@ -52,7 +52,7 @@ export default function About() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-              About <span className="text-blue-600">Astechnosolutions</span>
+              About <span className="text-blue-600">exordiainnovation</span>
             </h1>
             <p className="text-xl text-gray-600">
               Empowering individuals and businesses through innovative IT services and world-class tech education.
@@ -70,7 +70,7 @@ export default function About() {
                 <h2 className="text-4xl font-bold text-gray-900 mb-6">Our Story</h2>
                 <div className="space-y-4 text-gray-700 text-lg">
                   <p>
-                    Founded in 2019, <strong>Astechnosolutions</strong> began with a clear vision — to bridge the gap
+                    Founded in 2019, <strong>exordiainnovation</strong> began with a clear vision — to bridge the gap
                     between education, technology, and real-world business solutions. We identified the need for a
                     company that could both train aspiring professionals and deliver high-quality IT services to clients.
                   </p>
@@ -80,7 +80,7 @@ export default function About() {
                     corporate training, and career transformation.
                   </p>
                   <p>
-                    Today, Astechnosolutions continues to empower students and businesses alike — transforming ideas into
+                    Today, exordiainnovation continues to empower students and businesses alike — transforming ideas into
                     impactful digital experiences and successful careers.
                   </p>
                 </div>
@@ -193,7 +193,7 @@ export default function About() {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl font-bold mb-6">Join Our Success Story</h2>
             <p className="text-xl text-gray-300 mb-8">
-              Be part of Astechnosolutions — where innovation meets opportunity.
+              Be part of exordiainnovation — where innovation meets opportunity.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

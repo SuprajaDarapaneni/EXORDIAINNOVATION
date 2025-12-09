@@ -41,7 +41,7 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-bold mb-4">Contact Info</h3>
             <ul className="space-y-2 text-sm">
-              <li>Email: info@astechnosolutions.com</li>
+              <li>Email: info@exordiainnovation.com</li>
               <li>Phone: +91 9493252078</li>
               <li>Location: Vijayawada, India</li>
             </ul>

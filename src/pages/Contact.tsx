@@ -25,13 +25,13 @@ export default function Contact() {
       city: 'Vijayawada',
       address: 'Near Benz circle bharathi nagar  520008',
       phone: '+91 9493252078',
-      email: 'info@astechnosolutions.com',
+      email: 'info@exordiainnovation.com',
     },
     {
       city: 'Narasaraopet',
       address: '321-220 Ramireddypet Narasaraopet -522601',
       phone: '+91  9493252078',
-      email: 'info@astechnosolutions.com',
+      email: 'info@exordiainnovation.com',
     },
      
   ];
@@ -46,8 +46,8 @@ export default function Contact() {
     {
       icon: <Mail className="w-6 h-6" />,
       title: 'Email',
-      content: ' info@astechnosolutions.com',
-      link: 'mailto: info@astechnosolutions.com',
+      content: ' info@exordiainnovation.com',
+      link: 'mailto: info@exordiainnovation.com',
     },
     {
       icon: <Clock className="w-6 h-6" />,
