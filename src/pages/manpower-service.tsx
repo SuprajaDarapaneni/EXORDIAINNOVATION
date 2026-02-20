@@ -92,7 +92,7 @@ const ManpowerServicesPage: React.FC = () => {
     rel="noopener noreferrer"
     className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-xl font-semibold shadow"
   >
-    Contact Us on WhatsApp
+    Contact us on WhatsApp
   </a>
 
       </section>
