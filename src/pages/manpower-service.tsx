@@ -85,7 +85,7 @@ const ManpowerServicesPage: React.FC = () => {
           Partner with us for dependable manpower solutions.
         </p>
         <button className="bg-white text-indigo-600 px-8 py-3 rounded-xl font-semibold shadow">
-          Contact Us
+          Contact us
         </button>
       </section>
 
