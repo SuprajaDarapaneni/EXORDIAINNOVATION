@@ -39,6 +39,9 @@ export default function Header() {
             <Link to="/services" className="text-gray-700 hover:text-blue-600 transition">
               Services
             </Link>
+            <Link to="/manpower-service" className="text-gray-700 hover:text-blue-600 transition">
+              Manpower Services
+            </Link>
             <Link to="/contact" className="text-gray-700 hover:text-blue-600 transition">
               Contact
             </Link>
