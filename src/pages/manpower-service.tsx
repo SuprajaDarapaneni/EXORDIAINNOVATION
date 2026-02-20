@@ -15,7 +15,7 @@ const ManpowerServicesPage: React.FC = () => {
     <div className="font-sans text-gray-800">
 
       {/* HERO */}
-      <section className="bg-gradient-to-r from-indigo-600 to-blue-600 text-white text-center py-20 px-6">
+      <section className="bg-gradient-to-r from-indigo-600 to-blue-600 text-white text-center py-20 pt-32 px-2">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">
           Reliable Manpower Services
         </h1>
@@ -84,9 +84,17 @@ const ManpowerServicesPage: React.FC = () => {
         <p className="mb-6 opacity-90">
           Partner with us for dependable manpower solutions.
         </p>
-        <button className="bg-white text-indigo-600 px-8 py-3 rounded-xl font-semibold shadow">
-          Contact us
-        </button>
+          
+
+  <a
+    href="https://wa.me/919493252078"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-xl font-semibold shadow"
+  >
+    Contact Us on WhatsApp
+  </a>
+
       </section>
 
       
