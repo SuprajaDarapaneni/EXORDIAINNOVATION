@@ -2,41 +2,110 @@ import React, { useState } from "react";
 
 type InternshipCategory = "technical" | "nonTechnical";
 
-const InternshipsPage: React.FC = () => {
+interface InternshipItem {
+  title: string;
+  description: string;
+}
+
+const Internship: React.FC = () => {
   const [activeTab, setActiveTab] = useState<InternshipCategory>("technical");
 
-  const internships: Record<InternshipCategory, string[]> = {
+  const internships: Record<InternshipCategory, InternshipItem[]> = {
     technical: [
-      "Frontend Development",
-      "Backend Development",
-      "Full Stack Development",
-      "Flutter App Development",
-      "Data Science & Machine Learning",
-      "Cyber Security",
-      "UI/UX Design",
-      "Cloud Computing",
+      {
+        title: "Frontend Development",
+        description:
+          "Learn HTML, CSS, JavaScript, React and build responsive real-world websites.",
+      },
+      {
+        title: "Backend Development",
+        description:
+          "Work with APIs, databases, authentication and server-side logic.",
+      },
+      {
+        title: "Full Stack Development",
+        description:
+          "Develop complete web applications using frontend & backend technologies.",
+      },
+      {
+        title: "Flutter App Development",
+        description:
+          "Build cross-platform Android & iOS apps using Flutter framework.",
+      },
+      {
+        title: "Data Science & Machine Learning",
+        description:
+          "Learn data analysis, visualization and build predictive ML models.",
+      },
+      {
+        title: "Cyber Security",
+        description:
+          "Understand ethical hacking, network security and data protection.",
+      },
+      {
+        title: "UI/UX Design",
+        description:
+          "Design user-friendly interfaces and improve user experience skills.",
+      },
+      {
+        title: "Cloud Computing",
+        description:
+          "Deploy applications and manage servers using cloud platforms.",
+      },
     ],
     nonTechnical: [
-      "Human Resources (HR)",
-      "Digital Marketing",
-      "Business Development",
-      "Content Writing",
-      "Operations Management",
-      "Customer Support",
-      "Finance & Accounting",
-      "Sales & Promotion",
+      {
+        title: "Human Resources (HR)",
+        description:
+          "Learn recruitment processes, employee management and HR operations.",
+      },
+      {
+        title: "Digital Marketing",
+        description:
+          "Gain skills in SEO, social media marketing and online campaigns.",
+      },
+      {
+        title: "Business Development",
+        description:
+          "Develop client acquisition, negotiation and business growth skills.",
+      },
+      {
+        title: "Content Writing",
+        description:
+          "Improve writing skills for blogs, websites and marketing content.",
+      },
+      {
+        title: "Operations Management",
+        description:
+          "Understand business operations, workflow and process optimization.",
+      },
+      {
+        title: "Customer Support",
+        description:
+          "Build communication and problem-solving skills for customer handling.",
+      },
+      {
+        title: "Finance & Accounting",
+        description:
+          "Learn basic accounting, budgeting and financial record management.",
+      },
+      {
+        title: "Sales & Promotion",
+        description:
+          "Gain practical experience in sales strategies and promotions.",
+      },
     ],
   };
 
   const currentList = internships[activeTab];
 
   return (
-    <div className="min-h-screen bg-gray-100 p-6">
+    <div className="bg-gray-100 py-12 px-6 min-h-screen">
       <h1 className="text-3xl font-bold text-center mb-8">
         Internship Opportunities
       </h1>
 
-      {/* Toggle Buttons */}
+      {/* Toggle */}
       <div className="flex justify-center mb-8">
         <button
           onClick={() => setActiveTab("technical")}
@@ -61,18 +130,15 @@ const InternshipsPage: React.FC = () => {
         </button>
       </div>
 
-      {/* Internship Cards */}
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
-        {currentList.map((item: string, index: number) => (
+      {/* Cards */}
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        {currentList.map((item, index) => (
           <div
             key={index}
-            className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition text-center"
+            className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition"
           >
-            <h2 className="text-lg font-semibold">{item}</h2>
-
-            <button className="mt-4 w-full bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700">
-              Apply Now
-            </button>
+            <h2 className="text-lg font-semibold mb-2">{item.title}</h2>
+            <p className="text-gray-600 text-sm">{item.description}</p>
           </div>
         ))}
       </div>
@@ -80,4 +146,4 @@ const InternshipsPage: React.FC = () => {
   );
 };
 
-export default InternshipsPage;
+export default Internship;
