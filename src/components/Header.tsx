@@ -36,6 +36,9 @@ export default function Header() {
             <Link to="/placements" className="text-gray-700 hover:text-blue-600 transition">
               Placements
             </Link>
+            <Link to="/internships" className="text-gray-700 hover:text-blue-600 transition">
+              Internships
+            </Link>
             <Link to="/services" className="text-gray-700 hover:text-blue-600 transition">
               Services
             </Link>
