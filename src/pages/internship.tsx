@@ -86,12 +86,8 @@ const Internship: React.FC = () => {
 
       {/* HERO */}
       <div className="text-center py-16 px-6">
-        <h1 className="text-4xl font-bold text-gray-800 mb-4">
-          Internship Programs
-        </h1>
-        <p className="text-gray-600 max-w-2xl mx-auto">
-          Gain real-world experience and practical skills through our industry-focused internship programs.
-        </p>
+        
+        
       </div>
 
       {/* Toggle */}

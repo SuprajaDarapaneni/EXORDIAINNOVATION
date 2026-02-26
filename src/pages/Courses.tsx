@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function Courses() {
   const courses = [
+  
   {
     name: 'Python Full Stack',
     icon: <Code className="w-12 h-12" />,
@@ -52,9 +53,45 @@ export default function Courses() {
     topics: ['Docker', 'Kubernetes', 'CI/CD', 'AWS/Azure'],
     description: 'Learn DevOps practices and tools to streamline software development lifecycle.'
   },
+
+  // ⭐ NON-TECHNICAL COURSES ⭐
+
+  {
+    name: 'Digital Marketing',
+    icon: <Layout className="w-12 h-12" />,
+    slug: 'digital-marketing',
+    topics: ['SEO', 'Social Media Marketing', 'Google Ads', 'Content Strategy'],
+    description: 'Master online marketing strategies to grow brands and businesses.'
+  },
+  {
+    name: 'Human Resource Management',
+    icon: <CheckCircle className="w-12 h-12" />,
+    slug: 'hr-management',
+    topics: ['Recruitment', 'Payroll', 'Employee Relations', 'HR Policies'],
+    description: 'Learn modern HR practices and workforce management skills.'
+  },
+  {
+    name: 'Business Development & Sales',
+    icon: <ChevronRight className="w-12 h-12" />,
+    slug: 'business-development',
+    topics: ['Client Acquisition', 'Negotiation', 'Lead Generation', 'CRM Tools'],
+    description: 'Develop skills to drive business growth and build strong client relationships.'
+  },
+  {
+    name: 'Content Writing & Communication',
+    icon: <Brain className="w-12 h-12" />,
+    slug: 'content-writing',
+    topics: ['Blog Writing', 'Copywriting', 'Business Communication', 'Editing'],
+    description: 'Enhance writing and communication skills for digital and corporate environments.'
+  },
+  {
+    name: 'Finance & Accounting',
+    icon: <Database className="w-12 h-12" />,
+    slug: 'finance-accounting',
+    topics: ['Tally', 'GST', 'Financial Statements', 'Bookkeeping'],
+    description: 'Gain practical knowledge in accounting and financial management.'
+  }
 ];
-
-
   return (
     <main className="pt-20">
       <section className="bg-gradient-to-br from-blue-50 to-cyan-50 py-16">
