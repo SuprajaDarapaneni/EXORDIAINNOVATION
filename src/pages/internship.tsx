@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+import { Code, Database, Smartphone, Shield, PenTool, BarChart } from "lucide-react";
 
 type InternshipCategory = "technical" | "nonTechnical";
 
 interface InternshipItem {
   title: string;
   description: string;
+  icon: React.ReactNode;
 }
 
 const Internship: React.FC = () => {
@@ -14,85 +16,65 @@ const Internship: React.FC = () => {
     technical: [
       {
         title: "Frontend Development",
-        description:
-          "Learn HTML, CSS, JavaScript, React and build responsive real-world websites.",
+        description: "Build modern responsive websites using React & UI frameworks.",
+        icon: <Code size={28} />,
       },
       {
         title: "Backend Development",
-        description:
-          "Work with APIs, databases, authentication and server-side logic.",
-      },
-      {
-        title: "Full Stack Development",
-        description:
-          "Develop complete web applications using frontend & backend technologies.",
+        description: "Develop APIs, databases & server-side applications.",
+        icon: <Database size={28} />,
       },
       {
         title: "Flutter App Development",
-        description:
-          "Build cross-platform Android & iOS apps using Flutter framework.",
-      },
-      {
-        title: "Data Science & Machine Learning",
-        description:
-          "Learn data analysis, visualization and build predictive ML models.",
+        description: "Create Android & iOS apps using Flutter framework.",
+        icon: <Smartphone size={28} />,
       },
       {
         title: "Cyber Security",
-        description:
-          "Understand ethical hacking, network security and data protection.",
+        description: "Learn ethical hacking & protect systems from threats.",
+        icon: <Shield size={28} />,
       },
       {
         title: "UI/UX Design",
-        description:
-          "Design user-friendly interfaces and improve user experience skills.",
+        description: "Design intuitive user interfaces & improve user experience.",
+        icon: <PenTool size={28} />,
       },
       {
-        title: "Cloud Computing",
-        description:
-          "Deploy applications and manage servers using cloud platforms.",
+        title: "Data Science & ML",
+        description: "Analyze data & build intelligent machine learning models.",
+        icon: <BarChart size={28} />,
       },
     ],
     nonTechnical: [
       {
-        title: "Human Resources (HR)",
-        description:
-          "Learn recruitment processes, employee management and HR operations.",
+        title: "Digital Marketing",
+        description: "Master SEO, social media & online branding strategies.",
+        icon: <BarChart size={28} />,
       },
       {
-        title: "Digital Marketing",
-        description:
-          "Gain skills in SEO, social media marketing and online campaigns.",
+        title: "Human Resources",
+        description: "Learn recruitment, employee relations & HR operations.",
+        icon: <PenTool size={28} />,
       },
       {
         title: "Business Development",
-        description:
-          "Develop client acquisition, negotiation and business growth skills.",
+        description: "Develop client acquisition & business growth strategies.",
+        icon: <Database size={28} />,
       },
       {
         title: "Content Writing",
-        description:
-          "Improve writing skills for blogs, websites and marketing content.",
-      },
-      {
-        title: "Operations Management",
-        description:
-          "Understand business operations, workflow and process optimization.",
+        description: "Create engaging content for websites & marketing.",
+        icon: <Code size={28} />,
       },
       {
         title: "Customer Support",
-        description:
-          "Build communication and problem-solving skills for customer handling.",
+        description: "Build communication & customer handling skills.",
+        icon: <Smartphone size={28} />,
       },
       {
         title: "Finance & Accounting",
-        description:
-          "Learn basic accounting, budgeting and financial record management.",
-      },
-      {
-        title: "Sales & Promotion",
-        description:
-          "Gain practical experience in sales strategies and promotions.",
+        description: "Understand budgeting & financial record management.",
+        icon: <Shield size={28} />,
       },
     ],
   };
@@ -100,45 +82,59 @@ const Internship: React.FC = () => {
   const currentList = internships[activeTab];
 
   return (
-    <div className="bg-gray-100 py-12 px-6 min-h-screen">
-      <h1 className="text-3xl font-bold text-center mb-8">
-        Internship Opportunities
-      </h1>
+    <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-white to-blue-50">
+
+      {/* HERO */}
+      <div className="text-center py-16 px-6">
+        <h1 className="text-4xl font-bold text-gray-800 mb-4">
+          Internship Programs
+        </h1>
+        <p className="text-gray-600 max-w-2xl mx-auto">
+          Gain real-world experience and practical skills through our industry-focused internship programs.
+        </p>
+      </div>
 
       {/* Toggle */}
-      <div className="flex justify-center mb-8">
-        <button
-          onClick={() => setActiveTab("technical")}
-          className={`px-6 py-2 rounded-l-lg font-semibold ${
-            activeTab === "technical"
-              ? "bg-indigo-600 text-white"
-              : "bg-white border"
-          }`}
-        >
-          Technical
-        </button>
+      <div className="flex justify-center mb-12">
+        <div className="bg-white shadow-md rounded-full p-1 flex">
+          <button
+            onClick={() => setActiveTab("technical")}
+            className={`px-6 py-2 rounded-full font-medium transition ${
+              activeTab === "technical"
+                ? "bg-indigo-600 text-white"
+                : "text-gray-600"
+            }`}
+          >
+            Technical
+          </button>
 
-        <button
-          onClick={() => setActiveTab("nonTechnical")}
-          className={`px-6 py-2 rounded-r-lg font-semibold ${
-            activeTab === "nonTechnical"
-              ? "bg-indigo-600 text-white"
-              : "bg-white border"
-          }`}
-        >
-          Non-Technical
-        </button>
+          <button
+            onClick={() => setActiveTab("nonTechnical")}
+            className={`px-6 py-2 rounded-full font-medium transition ${
+              activeTab === "nonTechnical"
+                ? "bg-indigo-600 text-white"
+                : "text-gray-600"
+            }`}
+          >
+            Non-Technical
+          </button>
+        </div>
       </div>
 
       {/* Cards */}
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      <div className="max-w-6xl mx-auto px-6 pb-16 grid sm:grid-cols-2 md:grid-cols-3 gap-8">
         {currentList.map((item, index) => (
           <div
             key={index}
-            className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition"
+            className="bg-white/70 backdrop-blur-lg border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 transition duration-300"
           >
-            <h2 className="text-lg font-semibold mb-2">{item.title}</h2>
-            <p className="text-gray-600 text-sm">{item.description}</p>
+            <div className="text-indigo-600 mb-4">{item.icon}</div>
+            <h2 className="text-lg font-semibold mb-2 text-gray-800">
+              {item.title}
+            </h2>
+            <p className="text-gray-600 text-sm leading-relaxed">
+              {item.description}
+            </p>
           </div>
         ))}
       </div>
