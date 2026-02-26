@@ -57,40 +57,45 @@ export default function Courses() {
   // ⭐ NON-TECHNICAL COURSES ⭐
 
   {
-    name: 'Digital Marketing',
-    icon: <Layout className="w-12 h-12" />,
-    slug: 'digital-marketing',
-    topics: ['SEO', 'Social Media Marketing', 'Google Ads', 'Content Strategy'],
-    description: 'Master online marketing strategies to grow brands and businesses.'
-  },
-  {
-    name: 'Human Resource Management',
-    icon: <CheckCircle className="w-12 h-12" />,
-    slug: 'hr-management',
-    topics: ['Recruitment', 'Payroll', 'Employee Relations', 'HR Policies'],
-    description: 'Learn modern HR practices and workforce management skills.'
-  },
-  {
-    name: 'Business Development & Sales',
-    icon: <ChevronRight className="w-12 h-12" />,
-    slug: 'business-development',
-    topics: ['Client Acquisition', 'Negotiation', 'Lead Generation', 'CRM Tools'],
-    description: 'Develop skills to drive business growth and build strong client relationships.'
-  },
-  {
-    name: 'Content Writing & Communication',
-    icon: <Brain className="w-12 h-12" />,
-    slug: 'content-writing',
-    topics: ['Blog Writing', 'Copywriting', 'Business Communication', 'Editing'],
-    description: 'Enhance writing and communication skills for digital and corporate environments.'
-  },
-  {
-    name: 'Finance & Accounting',
-    icon: <Database className="w-12 h-12" />,
-    slug: 'finance-accounting',
-    topics: ['Tally', 'GST', 'Financial Statements', 'Bookkeeping'],
-    description: 'Gain practical knowledge in accounting and financial management.'
-  }
+  name: 'Digital Marketing',
+  icon: <Layout className="w-12 h-12" />,
+  slug: 'digital-marketing',
+  topics: ['SEO', 'Social Media Marketing', 'Google Ads', 'Content Strategy'],
+  description: 'Master online marketing strategies to grow brands and businesses.',
+  isNonTechnical: true,
+},
+{
+  name: 'Human Resource Management',
+  icon: <CheckCircle className="w-12 h-12" />,
+  slug: 'hr-management',
+  topics: ['Recruitment', 'Payroll', 'Employee Relations', 'HR Policies'],
+  description: 'Learn modern HR practices and workforce management skills.',
+  isNonTechnical: true,
+},
+{
+  name: 'Business Development & Sales',
+  icon: <ChevronRight className="w-12 h-12" />,
+  slug: 'business-development',
+  topics: ['Client Acquisition', 'Negotiation', 'Lead Generation', 'CRM Tools'],
+  description: 'Develop skills to drive business growth and build strong client relationships.',
+  isNonTechnical: true,
+},
+{
+  name: 'Content Writing & Communication',
+  icon: <Brain className="w-12 h-12" />,
+  slug: 'content-writing',
+  topics: ['Blog Writing', 'Copywriting', 'Business Communication', 'Editing'],
+  description: 'Enhance writing and communication skills for digital and corporate environments.',
+  isNonTechnical: true,
+},
+{
+  name: 'Finance & Accounting',
+  icon: <Database className="w-12 h-12" />,
+  slug: 'Finance-Accounting',
+  topics: ['Tally', 'GST', 'Financial Statements', 'Bookkeeping'],
+  description: 'Gain practical knowledge in accounting and financial management.',
+  isNonTechnical: true,
+}
 ];
   return (
     <main className="pt-20">
