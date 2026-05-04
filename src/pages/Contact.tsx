@@ -20,21 +20,26 @@ export default function Contact() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const locations = [
-    {
-      city: 'Vijayawada',
-      address: 'Near Benz circle bharathi nagar  520008',
-      phone: '+91 9493252078',
-      email: 'info@exordiainnovation.com',
-    },
-    {
-      city: 'Narasaraopet',
-      address: '321-220 Ramireddypet Narasaraopet -522601',
-      phone: '+91  9493252078',
-      email: 'info@exordiainnovation.com',
-    },
-     
-  ];
+ const locations = [
+  {
+    city: 'Vijayawada',
+    address: 'Near Benz circle bharathi nagar 520008',
+    phone: '+91 9493252078',
+    email: 'info@exordiainnovation.com',
+  },
+  {
+    city: 'Narasaraopet',
+    address: '321-220 Ramireddypet Narasaraopet -522601',
+    phone: '+91 9493252078',
+    email: 'info@exordiainnovation.com',
+  },
+  {
+    city: 'Hyderabad',
+    address: 'KPHB 1st Phase, Kukatpally, Hyderabad - 500072',
+    phone: '+91 9493252078',
+    email: 'info@exordiainnovation.com',
+  }
+];
 
   const contactInfo = [
     {
