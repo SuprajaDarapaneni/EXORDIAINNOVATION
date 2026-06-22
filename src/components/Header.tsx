@@ -54,6 +54,9 @@ export default function Header() {
             >
               Enroll Now
             </Link>
+            <Link to="/courses" className="text-gray-700 hover:text-blue-600 transition">
+              Courses
+            </Link>
           </div>
 
           {/* ✅ Mobile Menu Button */}
