@@ -10,6 +10,7 @@ import Placements from './pages/placements';
 import Services from './pages/services';
 import ManpowerServicePage from "./pages/manpower-service";
 import Internship from './pages/internship';
+import Careers from './pages/careers';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
             <Route path="/manpower-service" element={<ManpowerServicePage />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/careers" element={<Careers />} />
           </Routes>
         </div>
         <Footer />
