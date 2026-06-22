@@ -243,10 +243,10 @@ export default function Contact() {
               Join thousands of successful students who started their tech journey with us
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="tel:+919493252078" className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition font-semibold">
+              <a href="tel:+918500732241" className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition font-semibold">
                 Call Now
               </a>
-              <a href="https://wa.me/+919493252078" target="_blank" rel="noopener noreferrer" className="bg-green-600 text-white px-8 py-3 rounded-lg hover:bg-green-700 transition font-semibold">
+              <a href="https://wa.me/+918500732241" target="_blank" rel="noopener noreferrer" className="bg-green-600 text-white px-8 py-3 rounded-lg hover:bg-green-700 transition font-semibold">
                 WhatsApp Us
               </a>
             </div>
