@@ -117,79 +117,77 @@ export default function Footer() {
 
           {/* Contact Info */}
         {/* Contact Info */}
-<div>
+<div className="lg:col-span-1">
   <h3 className="text-xl font-bold text-black mb-5">
     Contact Info
   </h3>
 
-  <ul className="space-y-5">
+  {/* Email & Phone */}
+  <div className="space-y-3 mb-6">
+    <div className="flex items-center gap-3">
+      <Mail className="w-5 h-5 text-blue-600 flex-shrink-0" />
+      <span className="text-sm">info@exordiainnovation.com</span>
+    </div>
 
-    {/* Email */}
-    <li className="flex items-start gap-3">
-      <Mail className="w-5 h-5 text-blue-600 mt-1" />
-      <span>info@exordiainnovation.com</span>
-    </li>
+    <div className="flex items-center gap-3">
+      <Phone className="w-5 h-5 text-blue-600 flex-shrink-0" />
+      <span className="text-sm">+91 9493252078</span>
+    </div>
+  </div>
 
-    {/* Phone */}
-    <li className="flex items-start gap-3">
-      <Phone className="w-5 h-5 text-blue-600 mt-1" />
-      <span>+91 9493252078</span>
-    </li>
+  {/* Offices */}
+  <div className="grid grid-cols-1 gap-4 text-sm">
 
     {/* Head Office */}
-    <li className="flex items-start gap-3">
-      <MapPin className="w-5 h-5 text-blue-600 mt-1" />
-      <div>
-        <h4 className="font-semibold text-black">
-          Head Office
-        </h4>
-        <p>Ramdas Street</p>
-        <p>Arundelpet</p>
-        <p>Narasaraopet - 522601</p>
-        <p>Andhra Pradesh, India</p>
+    <div className="rounded-lg border border-gray-200 p-4 hover:shadow-md transition">
+      <div className="flex items-center gap-2 mb-2">
+        <MapPin className="w-4 h-4 text-blue-600" />
+        <h4 className="font-semibold text-black">Head Office</h4>
       </div>
-    </li>
 
-    {/* Vijayawada Branch */}
-    <li className="flex items-start gap-3 border-t border-gray-300 pt-5">
-      <MapPin className="w-5 h-5 text-blue-600 mt-1" />
-      <div>
-        <h4 className="font-semibold text-black">
-          Vijayawada Branch
-        </h4>
-        <p>Vijayawada</p>
-        <p>Andhra Pradesh, India</p>
+      <p>Ramdas Street</p>
+      <p>Arundelpet</p>
+      <p>Narasaraopet - 522601</p>
+      <p>Andhra Pradesh, India</p>
+    </div>
+
+    {/* Hyderabad */}
+    <div className="rounded-lg border border-gray-200 p-4 hover:shadow-md transition">
+      <div className="flex items-center gap-2 mb-2">
+        <MapPin className="w-4 h-4 text-blue-600" />
+        <h4 className="font-semibold text-black">Hyderabad Branch</h4>
       </div>
-    </li>
 
-    {/* Hyderabad Branch */}
-    <li className="flex items-start gap-3 border-t border-gray-300 pt-5">
-      <MapPin className="w-5 h-5 text-blue-600 mt-1" />
-      <div>
-        <h4 className="font-semibold text-black">
-          Hyderabad Branch
-        </h4>
-        <p>KPHB Phase 1</p>
-        <p>Kukatpally</p>
-        <p>Hyderabad - 500072</p>
-        <p>Telangana, India</p>
+      <p>KPHB Phase 1</p>
+      <p>Kukatpally</p>
+      <p>Hyderabad - 500072</p>
+      <p>Telangana, India</p>
+    </div>
+
+    {/* Vijayawada */}
+    <div className="rounded-lg border border-gray-200 p-4 hover:shadow-md transition">
+      <div className="flex items-center gap-2 mb-2">
+        <MapPin className="w-4 h-4 text-blue-600" />
+        <h4 className="font-semibold text-black">Vijayawada Branch</h4>
       </div>
-    </li>
 
-    {/* USA Branch */}
-    <li className="flex items-start gap-3 border-t border-gray-300 pt-5">
-      <MapPin className="w-5 h-5 text-blue-600 mt-1" />
-      <div>
-        <h4 className="font-semibold text-black">
-          USA Branch (Primary)
-        </h4>
-        <p>654 N Gould St</p>
-        <p>Sheridan, WY 82801</p>
-        <p>USA</p>
+      <p>Vijayawada</p>
+      <p>Andhra Pradesh, India</p>
+    </div>
+
+    {/* USA */}
+    <div className="rounded-lg border border-gray-200 p-4 hover:shadow-md transition">
+      <div className="flex items-center gap-2 mb-2">
+        <MapPin className="w-4 h-4 text-blue-600" />
+        <h4 className="font-semibold text-black">USA Branch</h4>
       </div>
-    </li>
 
-  </ul>
+      <p>654 N Gould St</p>
+      <p>Sheridan, WY 82801</p>
+      <p>USA</p>
+    </div>
+
+  </div>
 </div>
 
         </div>
