@@ -1,54 +1,178 @@
-import { BookOpen } from 'lucide-react';
-import { Link } from 'react-router-dom';
-import logo from '../assets/exordia_upscaled.png'; // your logo path
+import { Link } from "react-router-dom";
+import {
+  Mail,
+  Phone,
+  MapPin,
+} from "lucide-react";
+import logo from "../assets/exordia_upscaled.png";
 
 export default function Footer() {
   return (
-    <footer className="bg-white text-black py-12 border-t border-gray-800">
-      <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto">
+    <footer className="bg-white text-gray-700 border-t border-gray-200">
+      <div className="container mx-auto px-6 py-14">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+
+          {/* Logo */}
           <div>
-            <div className="flex items-center space-x-2 mb-4">
-              <img src={logo} alt="Company Logo" className=" h-14 w-auto object-contain brightness-125 contrast-125 hover:scale-105 transition-transform duration-300" />
-              {/* Remove text if you only want the logo */}
-              {/* <span className="text-xl font-bold text-white">Your Company</span> */}
-            </div>
-            <p className="text-sm">
+            <img
+              src={logo}
+              alt="Exordia Innovation"
+              className="h-14 w-auto mb-5"
+            />
+
+            <p className="text-sm leading-7 text-gray-600">
               Transforming careers through quality tech education and training.
             </p>
           </div>
 
+          {/* Quick Links */}
           <div>
-            <h3 className="text-white font-bold mb-4">Quick Links</h3>
-            <ul className="space-y-2 text-sm">
-              <li><Link to="/" className="hover:text-blue-400 transition">Home</Link></li>
-              <li><Link to="/courses" className="hover:text-blue-400 transition">Courses</Link></li>
-              <li><Link to="/about" className="hover:text-blue-400 transition">About Us</Link></li>
-              <li><Link to="/contact" className="hover:text-blue-400 transition">Contact</Link></li>
+            <h3 className="text-xl font-bold text-black mb-5">
+              Quick Links
+            </h3>
+
+            <ul className="space-y-3">
+              <li>
+                <Link
+                  to="/"
+                  className="hover:text-blue-600 transition"
+                >
+                  Home
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  to="/courses"
+                  className="hover:text-blue-600 transition"
+                >
+                  Courses
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  to="/about"
+                  className="hover:text-blue-600 transition"
+                >
+                  About Us
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  to="/contact"
+                  className="hover:text-blue-600 transition"
+                >
+                  Contact
+                </Link>
+              </li>
             </ul>
           </div>
 
+          {/* Popular Courses */}
           <div>
-            <h3 className="text-white font-bold mb-4">Popular Courses</h3>
-            <ul className="space-y-2 text-sm">
-              <li><Link to="/courses/python" className="hover:text-blue-400 transition">Python Programming</Link></li>
-              <li><Link to="/courses/data-science" className="hover:text-blue-400 transition">Data Science</Link></li>
-              <li><Link to="/courses/java" className="hover:text-blue-400 transition">Java Full Stack</Link></li>
-              <li><Link to="/courses/machine-learning" className="hover:text-blue-400 transition">Machine Learning</Link></li>
+            <h3 className="text-xl font-bold text-black mb-5">
+              Popular Courses
+            </h3>
+
+            <ul className="space-y-3">
+              <li>
+                <Link
+                  to="/courses/python"
+                  className="hover:text-blue-600 transition"
+                >
+                  Python Programming
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  to="/courses/data-science"
+                  className="hover:text-blue-600 transition"
+                >
+                  Data Science
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  to="/courses/java"
+                  className="hover:text-blue-600 transition"
+                >
+                  Java Full Stack
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  to="/courses/machine-learning"
+                  className="hover:text-blue-600 transition"
+                >
+                  Machine Learning
+                </Link>
+              </li>
             </ul>
           </div>
 
+          {/* Contact Info */}
           <div>
-            <h3 className="text-white font-bold mb-4">Contact Info</h3>
-            <ul className="space-y-2 text-sm">
-              <li>Email: info@exordiainnovation.com</li>
-              <li>Phone: +91 9493252078</li>
-              <li>Location: Vijayawada, India</li>
+            <h3 className="text-xl font-bold text-black mb-5">
+              Contact Info
+            </h3>
+
+            <ul className="space-y-5">
+
+              {/* Email */}
+              <li className="flex items-start gap-3">
+                <Mail className="w-5 h-5 text-blue-600 mt-1" />
+                <span>info@exordiainnovation.com</span>
+              </li>
+
+              {/* Phone */}
+              <li className="flex items-start gap-3">
+                <Phone className="w-5 h-5 text-blue-600 mt-1" />
+                <span>+91 9493252078</span>
+              </li>
+
+              {/* India Office */}
+              <li className="flex items-start gap-3">
+                <MapPin className="w-5 h-5 text-blue-600 mt-1" />
+
+                <div>
+                  <h4 className="font-semibold text-black">
+                    India Office
+                  </h4>
+
+                  <p>Vijayawada, Andhra Pradesh</p>
+                  <p>India</p>
+                </div>
+              </li>
+
+              {/* USA Office */}
+              <li className="flex items-start gap-3 border-t border-gray-300 pt-5">
+                <MapPin className="w-5 h-5 text-blue-600 mt-1" />
+
+                <div>
+                  <h4 className="font-semibold text-black">
+                    USA Office (Primary)
+                  </h4>
+
+                  <p>654 N Gould St</p>
+                  <p>Sheridan, WY 82801</p>
+                  <p>USA</p>
+                </div>
+              </li>
+
             </ul>
           </div>
+
         </div>
 
-        {/* Removed the copyright section */}
+        {/* Bottom Bar */}
+        <div className="border-t border-gray-200 mt-10 pt-6 text-center text-sm text-gray-500">
+          © {new Date().getFullYear()} Exordia Innovation. All Rights Reserved.
+        </div>
       </div>
     </footer>
   );

@@ -46,7 +46,7 @@ export default function Contact() {
       icon: <Phone className="w-6 h-6" />,
       title: 'Phone',
       content: '+91 9493252078',
-      link: 'tel:+919493252078',
+      link: 'tel:+918500732241 ',
     },
     {
       icon: <Mail className="w-6 h-6" />,
