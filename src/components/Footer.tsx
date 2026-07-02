@@ -116,56 +116,81 @@ export default function Footer() {
           </div>
 
           {/* Contact Info */}
-          <div>
-            <h3 className="text-xl font-bold text-black mb-5">
-              Contact Info
-            </h3>
+        {/* Contact Info */}
+<div>
+  <h3 className="text-xl font-bold text-black mb-5">
+    Contact Info
+  </h3>
 
-            <ul className="space-y-5">
+  <ul className="space-y-5">
 
-              {/* Email */}
-              <li className="flex items-start gap-3">
-                <Mail className="w-5 h-5 text-blue-600 mt-1" />
-                <span>info@exordiainnovation.com</span>
-              </li>
+    {/* Email */}
+    <li className="flex items-start gap-3">
+      <Mail className="w-5 h-5 text-blue-600 mt-1" />
+      <span>info@exordiainnovation.com</span>
+    </li>
 
-              {/* Phone */}
-              <li className="flex items-start gap-3">
-                <Phone className="w-5 h-5 text-blue-600 mt-1" />
-                <span>+91 9493252078</span>
-              </li>
+    {/* Phone */}
+    <li className="flex items-start gap-3">
+      <Phone className="w-5 h-5 text-blue-600 mt-1" />
+      <span>+91 9493252078</span>
+    </li>
 
-              {/* India Office */}
-              <li className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-blue-600 mt-1" />
+    {/* Head Office */}
+    <li className="flex items-start gap-3">
+      <MapPin className="w-5 h-5 text-blue-600 mt-1" />
+      <div>
+        <h4 className="font-semibold text-black">
+          Head Office
+        </h4>
+        <p>Ramdas Street</p>
+        <p>Arundelpet</p>
+        <p>Narasaraopet - 522601</p>
+        <p>Andhra Pradesh, India</p>
+      </div>
+    </li>
 
-                <div>
-                  <h4 className="font-semibold text-black">
-                    India Office
-                  </h4>
+    {/* Vijayawada Branch */}
+    <li className="flex items-start gap-3 border-t border-gray-300 pt-5">
+      <MapPin className="w-5 h-5 text-blue-600 mt-1" />
+      <div>
+        <h4 className="font-semibold text-black">
+          Vijayawada Branch
+        </h4>
+        <p>Vijayawada</p>
+        <p>Andhra Pradesh, India</p>
+      </div>
+    </li>
 
-                  <p>Vijayawada, Andhra Pradesh</p>
-                  <p>India</p>
-                </div>
-              </li>
+    {/* Hyderabad Branch */}
+    <li className="flex items-start gap-3 border-t border-gray-300 pt-5">
+      <MapPin className="w-5 h-5 text-blue-600 mt-1" />
+      <div>
+        <h4 className="font-semibold text-black">
+          Hyderabad Branch
+        </h4>
+        <p>KPHB Phase 1</p>
+        <p>Kukatpally</p>
+        <p>Hyderabad - 500072</p>
+        <p>Telangana, India</p>
+      </div>
+    </li>
 
-              {/* USA Office */}
-              <li className="flex items-start gap-3 border-t border-gray-300 pt-5">
-                <MapPin className="w-5 h-5 text-blue-600 mt-1" />
+    {/* USA Branch */}
+    <li className="flex items-start gap-3 border-t border-gray-300 pt-5">
+      <MapPin className="w-5 h-5 text-blue-600 mt-1" />
+      <div>
+        <h4 className="font-semibold text-black">
+          USA Branch (Primary)
+        </h4>
+        <p>654 N Gould St</p>
+        <p>Sheridan, WY 82801</p>
+        <p>USA</p>
+      </div>
+    </li>
 
-                <div>
-                  <h4 className="font-semibold text-black">
-                    USA Office (Primary)
-                  </h4>
-
-                  <p>654 N Gould St</p>
-                  <p>Sheridan, WY 82801</p>
-                  <p>USA</p>
-                </div>
-              </li>
-
-            </ul>
-          </div>
+  </ul>
+</div>
 
         </div>
 
