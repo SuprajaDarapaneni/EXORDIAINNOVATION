@@ -13,7 +13,7 @@
 
     <div className="flex items-center gap-3">
       <Phone className="w-4 h-4 text-blue-600 flex-shrink-0" />
-      <span className="text-sm text-gray-600">+91 9493252078</span>
+      <span className="text-sm text-gray-600">+91 +918500732241 </span>
     </div>
   </div>
 
@@ -32,21 +32,21 @@
         <MapPin className="w-4 h-4 text-blue-600" />
         <span>Hyderabad Branch</span>
       </div>
-      <p className="pl-6 text-xs text-gray-500">KPHB Phase 1, Kukatpally, TG</p>
+      <p className="pl-6 text-xs text-gray-500">KPHB Phase 1, TG</p>
     </div>
 
-    <div>
+    {/* <div>
       <div className="flex items-center gap-2 font-semibold text-black mb-1">
         <MapPin className="w-4 h-4 text-blue-600" />
         <span>Vijayawada Branch</span>
       </div>
       <p className="pl-6 text-xs text-gray-500">Vijayawada, AP, India</p>
-    </div>
+    </div> */}
 
     <div>
       <div className="flex items-center gap-2 font-semibold text-black mb-1">
         <MapPin className="w-4 h-4 text-blue-600" />
-        <span>USA Branch</span>
+        <span>USA </span>
       </div>
       <p className="pl-6 text-xs text-gray-500">Sheridan, WY, USA</p>
     </div>

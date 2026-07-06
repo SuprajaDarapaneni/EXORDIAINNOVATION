@@ -24,19 +24,19 @@ export default function Contact() {
   {
     city: 'Vijayawada',
     address: 'Near Benz circle bharathi nagar 520008',
-    phone: '+91 9493252078',
+    phone: '+91 +918500732241 ',
     email: 'info@exordiainnovation.com',
   },
   {
     city: 'Narasaraopet',
     address: '321-220 Ramireddypet Narasaraopet -522601',
-    phone: '+91 9493252078',
+    phone: '+91 +918500732241 ',
     email: 'info@exordiainnovation.com',
   },
   {
     city: 'Hyderabad',
     address: 'KPHB 1st Phase, Kukatpally, Hyderabad - 500072',
-    phone: '+91 9493252078',
+    phone: '+91 +918500732241 ',
     email: 'info@exordiainnovation.com',
   }
 ];
@@ -45,7 +45,7 @@ export default function Contact() {
     {
       icon: <Phone className="w-6 h-6" />,
       title: 'Phone',
-      content: '+91 9493252078',
+      content: '+91 +918500732241 ',
       link: 'tel:+918500732241 ',
     },
     {

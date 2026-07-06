@@ -87,7 +87,7 @@ const ManpowerServicesPage: React.FC = () => {
           
 
   <a
-    href="https://wa.me/919493252078"
+    href="https://wa.me/91+918500732241 "
     target="_blank"
     rel="noopener noreferrer"
     className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-xl font-semibold shadow"
