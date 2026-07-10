@@ -35,17 +35,24 @@ const jobs: Job[] = [
 ];
 
 const Careers: React.FC = () => {
+  const handleApplyClick = (jobTitle: string) => {
+    const emailTo = "careers@exordiainnovation.com";
+    const subject = encodeURIComponent(`Application for ${jobTitle} position`);
+    const body = encodeURIComponent(
+      `Hi Team,\n\nI am interested in applying for the ${jobTitle} position.\n\nPlease find my attached resume.\n\nBest regards,`
+    );
+
+    window.location.href = `mailto:${emailTo}?subject=${subject}&body=${body}`;
+  };
+
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 text-gray-800">
       {/* Hero Section */}
       <section className="bg-blue-900 text-white py-20">
         <div className="max-w-7xl mx-auto px-6 text-center">
-          <h1 className="text-5xl font-bold mb-4">
-            Join Our Team
-          </h1>
+          <h1 className="text-5xl font-bold mb-4">Join Our Team</h1>
           <p className="text-lg text-gray-200 max-w-2xl mx-auto">
-            Build your future with us. Explore exciting opportunities
-            and become part of our growing team.
+            Build your future with us. Explore exciting opportunities and become part of our growing team.
           </p>
         </div>
       </section>
@@ -53,47 +60,31 @@ const Careers: React.FC = () => {
       {/* Why Join Us */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center mb-12">
-            Why Work With Us?
-          </h2>
+          <h2 className="text-3xl font-bold text-center mb-12">Why Work With Us?</h2>
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-xl shadow-md">
-              <h3 className="text-xl font-semibold mb-3">
-                Career Growth
-              </h3>
-              <p className="text-gray-600">
-                Continuous learning opportunities and career advancement.
-              </p>
+              <h3 className="text-xl font-semibold mb-3">Career Growth</h3>
+              <p className="text-gray-600">Continuous learning opportunities and career advancement.</p>
             </div>
 
             <div className="bg-white p-8 rounded-xl shadow-md">
-              <h3 className="text-xl font-semibold mb-3">
-                Great Culture
-              </h3>
-              <p className="text-gray-600">
-                Collaborative, inclusive, and innovation-driven environment.
-              </p>
+              <h3 className="text-xl font-semibold mb-3">Great Culture</h3>
+              <p className="text-gray-600">Collaborative, inclusive, and innovation-driven environment.</p>
             </div>
 
             <div className="bg-white p-8 rounded-xl shadow-md">
-              <h3 className="text-xl font-semibold mb-3">
-                Flexible Work
-              </h3>
-              <p className="text-gray-600">
-                Remote-friendly policies and work-life balance.
-              </p>
+              <h3 className="text-xl font-semibold mb-3">Flexible Work</h3>
+              <p className="text-gray-600">Remote-friendly policies and work-life balance.</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Job Openings */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-white border-b">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center mb-12">
-            Current Openings
-          </h2>
+          <h2 className="text-3xl font-bold text-center mb-12">Current Openings</h2>
 
           <div className="space-y-6">
             {jobs.map((job) => (
@@ -102,9 +93,7 @@ const Careers: React.FC = () => {
                 className="bg-gray-50 border rounded-xl p-6 flex flex-col md:flex-row md:items-center justify-between gap-6 hover:shadow-lg transition"
               >
                 <div>
-                  <h3 className="text-2xl font-semibold mb-2">
-                    {job.title}
-                  </h3>
+                  <h3 className="text-2xl font-semibold mb-2">{job.title}</h3>
 
                   <div className="flex flex-wrap gap-4 text-gray-600">
                     <span className="flex items-center gap-2">
@@ -124,7 +113,10 @@ const Careers: React.FC = () => {
                   </div>
                 </div>
 
-                <button className="bg-blue-900 text-white px-6 py-3 rounded-lg hover:bg-blue-800 transition flex items-center gap-2">
+                <button
+                  onClick={() => handleApplyClick(job.title)}
+                  className="bg-blue-900 text-white px-6 py-3 rounded-lg hover:bg-blue-800 transition flex items-center gap-2 self-start md:self-auto font-medium"
+                >
                   Apply Now
                   <ArrowRight size={18} />
                 </button>
@@ -134,52 +126,19 @@ const Careers: React.FC = () => {
         </div>
       </section>
 
-      {/* Application Form */}
-      <section className="py-16">
-        <div className="max-w-3xl mx-auto px-6">
-          <div className="bg-white rounded-xl shadow-lg p-8">
-            <h2 className="text-3xl font-bold text-center mb-8">
-              Apply for a Position
-            </h2>
-
-            <form className="space-y-6">
-              <input
-                type="text"
-                placeholder="Full Name"
-                className="w-full border p-4 rounded-lg"
-              />
-
-              <input
-                type="email"
-                placeholder="Email Address"
-                className="w-full border p-4 rounded-lg"
-              />
-
-              <input
-                type="tel"
-                placeholder="Phone Number"
-                className="w-full border p-4 rounded-lg"
-              />
-
-              <input
-                type="file"
-                className="w-full border p-4 rounded-lg"
-              />
-
-              <textarea
-                rows={5}
-                placeholder="Cover Letter"
-                className="w-full border p-4 rounded-lg"
-              />
-
-              <button
-                type="submit"
-                className="w-full bg-blue-900 text-white py-4 rounded-lg hover:bg-blue-800"
-              >
-                Submit Application
-              </button>
-            </form>
-          </div>
+      {/* General Inquiry Footer */}
+      <section className="py-16 bg-gray-50 text-center">
+        <div className="max-w-2xl mx-auto px-6">
+          <h3 className="text-2xl font-bold mb-3">Don't see a matching role?</h3>
+          <p className="text-gray-600 mb-6">
+            We are always looking for amazing talent. Send your resume over for future opportunities.
+          </p>
+          <button
+            onClick={() => handleApplyClick("General Inquiry")}
+            className="text-blue-900 border-2 border-blue-900 px-6 py-3 rounded-lg hover:bg-blue-900 hover:text-white transition font-semibold"
+          >
+            Send General Application
+          </button>
         </div>
       </section>
     </div>
